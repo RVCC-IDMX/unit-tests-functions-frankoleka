@@ -61,6 +61,9 @@ function convertToDecimal(percent) {
  * example: [1, 2, 3, 4], [4, 3, 2, 1, 5] returns false
  */
 function checkSameSum(a1, a2) {
+  function arraySum(array) {
+    return array.reduce((sum, current) => sum + current, 0);
+  }
   return arraySum(a1) === arraySum(a2);
 }
 
